@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK1</title>
+    <style>
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+         label {
+            margin: 5px 0;
+            justify-content: center;
+            align-items: center;
+        } 
+        input {
+            margin: 5px 0;
+    
+        }
+    </style>
+</head>
+<!--Create a simple form with the following features 1. Takes in Name, Email address, Phone number, Gender and Password 2. A SUBMIT button. 3. On submit must highlight the empty block. 4. Error message when entering the wrong format of email ID. 5. Display a success message on successful submission-->
+<body>
+    <form action="Input Form">
+        <fieldset style="width: 300px; height: 200px; display: inline-block;">
+            <legend>
+                Personal Details
+            </legend>
+                    <label for="name">Name:</label>
+                    <input type="text" placeholder="Enter your name" required><br>
+                    <label for="email">Email:</label>
+                    <input type="email" required><br>
+                    <label for="phone number">Phone number:</label>
+                    <input type="numeral" required><br>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="
+                    male" required>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="
+                    female" required><br>
+                    <label for="">Password</label>
+                    <input type="password" placeholder="Enter your password" required><br>
+                    <a href="" style="text-decoration: none; color: black;">Forgot Password?</a><br>
+                        <button style="justify-content: center; align-items: center; " type="submit" onclick="alert('Successful submission')">SUBMIT</button>
+        </fieldset>
+    </form>
+</body>
+</html>
