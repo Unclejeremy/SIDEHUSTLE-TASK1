@@ -24,15 +24,15 @@
 </head>
 <!--Create a simple form with the following features 1. Takes in Name, Email address, Phone number, Gender and Password 2. A SUBMIT button. 3. On submit must highlight the empty block. 4. Error message when entering the wrong format of email ID. 5. Display a success message on successful submission-->
 <body>
-    <form action="Input Form">
+    <form name="myForm" action="test.html" onsubmit="alert('successful')">
         <fieldset style="width: 300px; height: 200px; display: inline-block;">
             <legend>
                 Personal Details
             </legend>
                     <label for="name">Name:</label>
-                    <input type="text" placeholder="Enter your name" required><br>
+                    <input name="fName" type="text" placeholder="Enter your name" required><br>
                     <label for="email">Email:</label>
-                    <input type="email" required><br>
+                    <input type="email" id="required" required><br>
                     <label for="phone number">Phone number:</label>
                     <input type="numeral" required><br>
                     <label for="male">Male</label>
@@ -44,7 +44,7 @@
                     <label for="">Password</label>
                     <input type="password" placeholder="Enter your password" required><br>
                     <a href="" style="text-decoration: none; color: black;">Forgot Password?</a><br>
-                        <button style="justify-content: center; align-items: center; " type="submit" onclick="alert('Successful submission')">SUBMIT</button>
+                        <button style="justify-content: center; align-items: center; " type="submit" value="Submit">SUBMIT</button>
         </fieldset>
     </form>
 </body>
