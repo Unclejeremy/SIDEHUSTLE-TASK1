@@ -6,46 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TASK1</title>
     <style>
-        form {
-            display: flex;
+        body {
+            /* background-image: url(./Document\ from\ Unuigbokhai\ Godswill\ \(3\).jpg); */
+            width: 1000px;
+            height: 500px;
+            display: block;
+            overflow: hidden;
             justify-content: center;
             align-items: center;
+            align-content: center;
+            background-color: blue;
+        
+            
+        }
+       
+      
+        .pform {
+            /* background-color: rgba(56, 27, 10, 0.578); */
+            width: 600px;
+            height: 600px;
+            /* border: 2px solid rgb(251, 253, 251); */
+            border-radius: 20px;
+            color: white;
+            font-size: 20px;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+
+        }
+
+        .housing {
+            /* border: 2px solid green; */
+            margin-left: 30px;
+            width: 750px;
+            height: 100px;
+            color: white;
+            font-size: 30px;
+            justify-self: center;
         }
          label {
-            margin: 5px 0;
+            margin: 10px 0;
             justify-content: center;
             align-items: center;
+            justify-content: center;
         } 
-        input {
+
+
+        fieldset {
+            border: 2px solid rgb(242, 243, 242);
+            border-radius: 20px;
+            height: 350px;
+            justify-content: center;
+            margin: 0px 30px;
+            color: aliceblue;
+            font-weight: bolder;
+            text-align: center;
+            text-decoration: none;
+
+        }
+
+        a {
+            color: aliceblue;
+            margin-top: 10px;
+
+        }
+        .inpt {
             margin: 5px 0;
-    
+            padding: 5px 5px;
+            width: 400px;
+         
+        }
+
+        button {
+            width: 100px;
+            height: 30px;
+            font-size: 20px;
+            font-weight: 900;
+            margin-top: 15px;
         }
     </style>
 </head>
 <!--Create a simple form with the following features 1. Takes in Name, Email address, Phone number, Gender and Password 2. A SUBMIT button. 3. On submit must highlight the empty block. 4. Error message when entering the wrong format of email ID. 5. Display a success message on successful submission-->
 <body>
-    <form name="myForm" action="test.html" onsubmit="alert('Successful submission')">
-        <fieldset style="width: 300px; height: 200px; display: inline-block;">
+    <form class="pform" name="myForm" action="test.html" onsubmit="alert('Successful submission')">
+        <div class="housing">
+            <h2>HOUSE LOCKING SYSTEM</h2>
+        </div>
+        <fieldset >
             <legend>
                 Personal Details
             </legend>
-                    <label for="name">Name:</label>
-                    <input name="fName" type="text" placeholder="Enter your name" required><br>
-                    <label for="email">Email:</label>
-                    <input type="email" id="required" required><br>
-                    <label for="phone number">Phone number:</label>
-                    <input type="number" required><br>
+                    <label for="name">Name</label><br>
+                    <input class="inpt" name="fName" type="text" placeholder="Enter your name" required><br>
+                    <label for="email">Email</label><br>
+                    <input class="inpt" type="email" placeholder="Enter your email" id="required" required><br>
+                    <label for="phone number">Phone number</label><br>
+                    <input class="inpt" placeholder="Enter your mobile number" type="number" required><br>
                     <label for="male">Male</label>
                     <input type="radio" name="gender" id="
                     male" required>
                     <label for="female">Female</label>
                     <input type="radio" name="gender" id="
                     female" required><br>
-                    <label for="">Password</label>
+                    <label for="">Password</label><br>
                     <input type="password" placeholder="Enter your password" required><br>
-                    <a href="" style="text-decoration: none; color: black;">Forgot Password?</a><br>
-                        <button style="justify-content: center; align-items: center; " type="submit" value="Submit">SUBMIT</button>
+                    <a href="#" >Forgot Password?</a><br>
+                        <button type="submit" value="Submit">SUBMIT</button>
         </fieldset>
-    </form>
+    <!-- </form> -->
 </body>
 </html>
